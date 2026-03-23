@@ -1,0 +1,77 @@
+.style0{
+    background-color: antiquewhite;
+    background-image:url(../图片/书架.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% ;
+    height: 100%;
+
+}
+/*背景*/
+.style1{
+    padding: 0vw 10vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.style1 div{
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin: 100px 20px 20px;
+}   
+.style1 img{
+    background-color: rgb(241, 241, 241,0.3);
+    width: 100%;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.style1 img:hover{
+    transform: translatey(-10px) rotate(8deg);
+    transition: 0.1s;
+}
+.style1 p{
+    margin: 10px;
+}
+/* 第一行 */
+
+.style2{
+    padding: 0vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.style2 div{
+    color: white;
+    width:200px;
+    text-align: center;
+    margin: 25px 20px 20px;
+}   
+.style2 img{
+    background-color: rgb(241, 241, 241,0.3);
+    width: 100%;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.style2 img:hover{
+    transform: translatey(-10px) rotate(8deg);
+}
+.style2 p{
+    margin: 10px;
+}
+/* 其他行 */
+
+@media screen and (max-width:786px) {
+    .style1,.style2{
+        flex-direction: column;
+    }
+    .style1{
+        padding-top: 100px;
+    }
+    .style1 div{
+        justify-content: center;
+        margin: 20px;
+    }
+}
