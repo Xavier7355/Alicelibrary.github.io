@@ -81,47 +81,7 @@
     font-size: 1.6rem;
 }
 
-/* ========== 响应式设计（手机 ≤768px） ========== */
-@media screen and (max-width: 768px) {
 
-    .hero-text-box {
-        margin-top: 20vh;
-    }
-
-    .hero-quote-box {
-        margin-top: 0;
-    }
-
-    .hero-quote-box blockquote {
-        margin-bottom: 0px;
-        font-size: 1.5rem;
-        line-height: 1.4;
-    }
-
-    .hero-text-box h2 {
-        font-size: 1.8rem;
-        margin: 0 0 15px;
-    }
-
-    .hero-text-box .hero-sub {
-        font-size: 1rem;
-        margin: 8px 0;
-    }
-
-    /* 特色卡片区响应式 */
-    .features {
-        flex-direction: column;
-    }
-    .feature-card {
-        width: 50%;
-    }
-
-    .visitor-form p {
-        margin-left: 25px;
-        margin-right: 25px;
-        font-size: 13px;
-    }
-}
 
 /* ----- 第三部分：特色卡片区 ----- */
 .features {
@@ -216,4 +176,47 @@ input:focus {
 }
 .menu2:hover {
     border-color: rgb(235, 212, 255);
+}
+
+
+/* ========== 响应式设计（手机 ≤768px） ========== */
+@media screen and (max-width: 768px) {
+
+    .hero-text-box {
+        margin-top: 20vh;
+    }
+
+    .hero-quote-box {
+        margin-top: 0;
+    }
+
+    .hero-quote-box blockquote {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .hero-text-box h2 {
+        font-size: 1.8rem;
+        margin: 0 0 15px;
+    }
+
+    .hero-text-box .hero-sub {
+        font-size: 1rem;
+        margin: 8px 0;
+    }
+
+    /* 特色卡片区响应式 */
+    .features {
+        flex-direction: column;
+    }
+    .feature-card {
+        width: 50%;
+    }
+
+    .visitor-form p {
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 13px;
+    }
 }
