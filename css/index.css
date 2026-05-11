@@ -93,7 +93,7 @@
     }
 
     .hero-quote-box blockquote {
-        margin-top: 30vh;
+        margin-bottom: 0px;
         font-size: 1.5rem;
         line-height: 1.4;
     }
