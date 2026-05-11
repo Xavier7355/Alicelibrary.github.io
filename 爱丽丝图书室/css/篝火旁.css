@@ -1,0 +1,67 @@
+.body{
+    min-height: 100vh;
+    background-image:url(../图片/黑墙.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+/* 背景 */
+
+.shang{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.xia{
+    height: 50vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-end;
+}
+.weidanmu{
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    color: aliceblue;
+}
+
+
+    
+
+
+
+/* 背景 */
+.fire img{
+    border-radius: 10px;
+}
+.shang div button{
+    margin: 10vw;
+    padding: 20px 50px;
+    color:whitesmoke;
+    background-color: rgb(25, 25, 25,0.9);
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+/* 火 */
+
+
+@media screen and (max-width:768px) {
+
+    .fire img{
+        width: 350px;
+    }
+    .shang div button{
+        margin: 5vw;
+    }
+    
+}
+
+
+
