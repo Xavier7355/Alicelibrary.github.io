@@ -1,0 +1,251 @@
+/* ========== 全局重置 & 基础样式 ========== */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* ========== 页眉区域 ========== */
+header {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+header h1 {
+    color: whitesmoke;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(../images/logo.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    text-indent: 50px;
+    font-size: 40px;
+    letter-spacing: 15px;
+    transition: 0.1s;
+}
+
+header h1:hover {
+    background-size: 70%;
+    transition: 0.1s;
+}
+
+/* 标题中的链接（透明文字，仅作点击区域） */
+.op {
+    color: rgb(255, 255, 255, 0);
+}
+
+header ul {
+    position: absolute;
+    right: 4vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header a {
+    color: aliceblue;
+    text-decoration-line: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+/* ========== 回到顶部按钮（.menu2） ========== */
+.menu2 {
+    border-radius: 300px;
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: aliceblue;
+}
+
+.menu2 a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu2 a:hover {
+    color: rgb(235, 212, 255);
+}
+
+.menu2:hover {
+    border-color: rgb(235, 212, 255);
+}
+
+/* ========== 页脚 ========== */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(103, 101, 101);
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+/* ========== 彩蛋项样式（爱丽丝密室） ========== */
+.checked {
+    opacity: 0;
+    transition: 0.3s;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.checked:hover {
+    opacity: 1;
+    text-decoration: line-through;
+    transition: 0.3s;
+}
+
+.sidebar .checked {
+    text-decoration: line-through;
+}
+
+.sidebar .checked:hover {
+    text-decoration: line-through;
+}
+
+/* ========== 侧边栏抽屉（手机端） ========== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 80px 20px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
+
+.sidebar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(187, 115, 255, 0.3);
+    text-decoration: none;
+}
+
+/* 遮罩层（点击关闭侧边栏） */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* ========== 汉堡菜单按钮（默认隐藏，手机端显示） ========== */
+.menu {
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    display: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    border: 1px solid rgb(187, 115, 255);
+    border-radius: 5px;
+    padding: 5px 12px;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+}
+
+.menu:hover {
+    background-color: rgba(187, 115, 255, 0.3);
+}
+
+/* ========== 响应式设计（手机 ≤768px） ========== */
+@media screen and (max-width: 768px) {
+
+    /* 显示汉堡菜单按钮 */
+    .menu {
+        position: absolute;
+        top: 11px;
+        left: 20px;
+        display: block;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        border-color: rgb(187, 115, 255);
+        border-radius: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .menu a:hover {
+        text-decoration: none;
+    }
+
+    /* 调整页眉标题样式 */
+    header h1 {
+        background-size: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-indent: 35%;
+    }
+
+    header h1:hover {
+        background-size: 40%;
+        transition: 0.1s;
+    }
+
+    /* 隐藏桌面导航菜单 */
+    header ul {
+        display: none;
+    }
+
+    /* 调整标题内透明文字的字体 */
+    .op {
+        font-size: 25px;
+        letter-spacing: normal;
+    }
+}

@@ -1,0 +1,88 @@
+/* ========== 魔导书页面专属样式 ========== */
+/* 原 .style0 → 页面背景 */
+.grimoire-bg {
+    background-color: antiquewhite;
+    background-image: url(../images/书架.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45%;
+    height: 100%;
+}
+
+/* 第一行容器（原 .style1） */
+.grimoire-row-primary {
+    padding: 0vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grimoire-row-primary div {
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin: 100px 20px 20px;
+}
+
+.grimoire-row-primary img {
+    background-color: rgb(241, 241, 241, 0.3);
+    width: 100%;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.grimoire-row-primary img:hover {
+    transform: translatey(-10px) rotate(8deg);
+    transition: 0.1s;
+}
+
+.grimoire-row-primary p {
+    margin: 10px;
+}
+
+/* 其他行容器（原 .style2） */
+.grimoire-row-secondary {
+    padding: 0vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grimoire-row-secondary div {
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin: 25px 20px 20px;
+}
+
+.grimoire-row-secondary img {
+    background-color: rgb(241, 241, 241, 0.3);
+    width: 100%;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.grimoire-row-secondary img:hover {
+    transform: translatey(-10px) rotate(8deg);
+}
+
+.grimoire-row-secondary p {
+    margin: 10px;
+}
+
+/* 响应式：窄屏垂直排列（原断点 786px 保持不变） */
+@media screen and (max-width: 786px) {
+    .grimoire-row-primary,
+    .grimoire-row-secondary {
+        flex-direction: column;
+    }
+    .grimoire-row-primary {
+        padding-top: 100px;
+    }
+    .grimoire-row-primary div {
+        justify-content: center;
+        margin: 20px;
+    }
+}

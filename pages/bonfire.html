@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>篝火旁</title>
+    <link rel="stylesheet" href="../css/bonfire.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body class="body">
+  <header>  
+    <h1><a class="op" href="../index.html">爱丽丝图书室</a></h1>
+    <nav>
+      <ul>
+        <li><a href="./grimm.html">格林童话</a></li>
+        <li><a href="./grimoire.html">魔导书</a></li>
+        <li><a href="./bonfire.html">篝火旁</a></li>
+        <li><a onclick="window.alert('不知为何握不住门把手')" class="checked">爱丽丝密室</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button class="menu" id="menuBtn">☰</button>
+
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="./grimm.html">格林童话</a></li>
+      <li><a href="./grimoire.html">魔导书</a></li>
+      <li><a href="./bonfire.html">篝火旁</a></li>
+      <li><a onclick="window.alert('不知为何握不住门把手')" class="checked">爱丽丝密室</a></li>
+    </ul>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <section class="bonfire-top">
+      <div>
+        <button onclick="document.getElementById('fire').src='../images/篝火.gif'">点火</button>
+        <button onclick="document.getElementById('fire').src='../images/灭.jpg'">熄灭</button>
+      </div>
+    </section>
+
+    <section class="bonfire-bottom">
+      <div class="bonfire-img">
+        <img id="fire" src="../images/篝火.gif" alt="篝火">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>made by 郭轩 424109111219. But,where is Alice......</p>
+  </footer>
+
+  <script src="../js/sidebar.js"></script>
+</body>
+</html>

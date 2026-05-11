@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔导书</title>
+    <link rel="stylesheet" href="../css/grimoire.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <header>  
+    <h1><a class="op" href="../index.html">爱丽丝图书室</a></h1>
+    <nav>
+      <ul>
+        <li><a href="./grimm.html">格林童话</a></li>
+        <li><a href="./grimoire.html">魔导书</a></li>
+        <li><a href="./bonfire.html">篝火旁</a></li>
+        <li><a onclick="window.alert('不知为何握不住门把手')" class="checked">爱丽丝密室</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 汉堡菜单按钮 -->
+  <button class="menu" id="menuBtn">☰</button>
+
+  <!-- 侧边栏抽屉 -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="./grimm.html">格林童话</a></li>
+      <li><a href="./grimoire.html">魔导书</a></li>
+      <li><a href="./bonfire.html">篝火旁</a></li>
+      <li><a onclick="window.alert('不知为何握不住门把手')" class="checked">爱丽丝密室</a></li>
+    </ul>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- 主内容： -->
+  <main class="grimoire-bg">
+    <!-- 第一行魔导书（ -->
+    <section class="grimoire-row-primary">
+      <div>
+        <img src="../images/卷轴.png" alt="卷轴">
+        <h3>考えていることを言ってしまう魔法</h3>
+        <p>把思考的事情说出来的魔法</p>
+      </div>
+      <div>
+        <img src="../images/卷轴.png" alt="卷轴">
+        <h3>お酒からアルコールだけを抜く魔法</h3>
+        <p>从酒中取出酒精的魔法</p>
+      </div>
+      <div>
+        <img src="../images/卷轴.png" alt="卷轴">
+        <h3>体から良いにおいが出る魔法</h3>
+        <p>身体发出好闻气味的魔法</p>
+      </div>
+    </section>
+
+    <!-- 第二行 -->
+    <section class="grimoire-row-secondary">
+      <div>
+        <img src="../images/书信.png" alt="书信">
+        <h3>朝決まった時間に起きれるようになる魔法</h3>
+        <p>早上能让人准时起床的魔法</p>
+      </div>
+      <div>
+        <img src="../images/书信.png" alt="书信">
+        <h3>食卓をしあわせにする魔法</h3>
+        <p>使餐桌变得幸福的魔法</p>
+      </div>
+      <div>
+        <img src="../images/书信.png" alt="书信">
+        <h3>考えていることを言ってしまう魔法</h3>
+        <p>变好运的魔法</p>
+      </div>
+    </section>
+
+    <!-- 第三行 -->
+    <section class="grimoire-row-secondary">
+      <div>
+        <img src="../images/开卷轴.png" alt="开卷轴">
+        <h3>しつこい油汚れを落とす魔法</h3>
+        <p>去除顽固油污的魔法</p>
+      </div>
+      <div>
+        <img src="../images/开卷轴.png" alt="开卷轴">
+        <h3>ものすごく早口に澱みなく喋れる魔法</h3>
+        <p>说话能说得非常快的魔法</p>
+      </div>
+      <div>
+        <img src="../images/开卷轴.png" alt="开卷轴">
+        <h3>魚の気持ちがわかる魔法</h3>
+        <p>能理解鱼的心情的魔法</p>
+      </div>
+    </section>
+
+    <!-- 回到顶部按钮 -->
+    <button class="menu2"><a href="#">&#x2191<hr>top</a></button>
+  </main>
+
+  <footer>
+    <p>made by 郭轩 424109111219. But,where is Alice......</p>
+  </footer>
+
+  <script src="../js/sidebar.js"></script>
+</body>
+</html>

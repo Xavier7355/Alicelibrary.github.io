@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱丽丝图书室</title>
+    <!-- 全局样式 + 首页专用样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+
+<body>
+  <!-- ========== 页眉（固定导航） ========== -->
+  <header>  
+    <h1><a class="op" href="./index.html">爱丽丝图书室</a></h1>
+    <nav>
+      <ul>
+        <li><a href="./pages/grimm.html">格林童话</a></li>
+        <li><a href="./pages/grimoire.html">魔导书</a></li>
+        <li><a href="./pages/bonfire.html">篝火旁</a></li>
+        <!-- 彩蛋项：点击提示“不知为何握不住门把手” -->
+        <li><a onclick="window.alert('不知为何握不住门把手')" class="checked">爱丽丝密室</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== 手机端汉堡菜单按钮 ========== -->
+  <button class="menu" id="menuBtn">☰</button>
+
+  <!-- ========== 侧边栏抽屉（手机端显示） ========== -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="./pages/grimm.html">格林童话</a></li>
+      <li><a href="./pages/grimoire.html">魔导书</a></li>
+      <li><a href="./pages/bonfire.html">篝火旁</a></li>
+      <li><a onclick="window.alert('不知为何握不住门把手')" class="checked">爱丽丝密室</a></li>
+    </ul>
+  </div>
+  <!-- 遮罩层：点击关闭侧边栏 -->
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <!-- 第一部分：英雄区 -->
+    <section class="hero">
+      <!-- 盒子1：主要文字内容 -->
+      <div class="hero-text-box">
+        <h2>“爱丽丝图书室——现实与幻想的交汇点。”</h2>
+        <p class="hero-sub"><strong>在这里，你可以与爱丽丝一起追逐兔子，踏上魔法之旅。</strong></p>
+        <p class="hero-sub"><strong>借阅的不只是书，是一段段不可思议的旅程。</strong></p>
+        <p class="hero-link">
+          <a target="_blank" href="https://mzh.moegirl.org.cn/%E7%88%B1%E4%B8%BD%E4%B8%9D(BLACK_SOULS)#"><em>魔法传送门</em></a>
+        </p>
+      </div>
+      <!-- 盒子2：引语 -->
+      <div class="hero-quote-box">
+        <blockquote>“打开书页，<br>开启你的魔幻之旅。”</blockquote>
+      </div>
+    </section>
+
+    <!-- 第三部分：特色卡片区 -->
+    <section class="features">
+      <div class="feature-card">
+        <img src="./images/篝火.jpg" alt="篝火">
+        <h3>篝火</h3>
+        <p>在这个世界少有的温暖......</p>
+      </div>
+      <div class="feature-card">
+        <img src="./images/莫娜.jpg" alt="清晨">
+        <h3>晨光</h3>
+        <p>清晨的朦胧，亦或是迷惘？</p>
+      </div>
+      <div class="feature-card">
+        <img src="./images/萤火虫.gif" alt="萤火虫">
+        <h3>神秘之地</h3>
+        <p>还有未知在等着谁人的到来。</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 第四部分：来访者ID表单 -->
+  <section class="visitor-form">
+    <p>您是我们尊贵的来访者，请输入您的ID，让我们提前知晓您的到来。</p>
+    <form>
+      <input type="text" placeholder="来访册的一行......" required>
+      <button type="submit">完成</button>
+    </form>
+  </section>
+
+  <!-- 回到顶部按钮 -->
+  <button class="menu2"><a href="#">&#x2191<hr>top</a></button>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>made by 郭轩 424109111219. But,where is Alice......</p>
+  </footer>
+
+  <!-- 侧边栏交互脚本 -->
+  <script src="./js/sidebar.js"></script>
+</body>
+</html>

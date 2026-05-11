@@ -1,0 +1,55 @@
+/* ========== 篝火旁页面专属样式 ========== */
+
+/* 页面背景*/
+.body {
+    min-height: 100vh;
+    background-image: url(../images/黑墙.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 上半部分容器 */
+.bonfire-top {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 下半部分容器 */
+.bonfire-bottom {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* 篝火图片样式 */
+.bonfire-img img {
+    border-radius: 10px;
+}
+
+/* 点火/熄灭按钮样式 */
+.bonfire-top div button {
+    margin: 10vw;
+    padding: 20px 50px;
+    color: whitesmoke;
+    background-color: rgb(25, 25, 25, 0.9);
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* 响应式：手机端 ≤768px */
+@media screen and (max-width: 768px) {
+    .bonfire-img img {
+        width: 350px;
+    }
+    .bonfire-top div button {
+        margin: 5vw;
+    }
+}

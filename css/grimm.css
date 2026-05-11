@@ -1,0 +1,88 @@
+/* ========== 格林童话页面专属样式 ========== */
+/* 原 .style0 → 页面背景 */
+.grimm-bg {
+    background-color: antiquewhite;
+    background-image: url(../images/书架.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45%;
+    height: 100%;
+}
+
+/* 第一行书籍容器（原 .style1） */
+.book-row-primary {
+    padding: 0vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-row-primary div {
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin: 100px 20px 20px;
+}
+
+.book-row-primary img {
+    background-color: rgb(241, 241, 241, 0.3);
+    width: 100%;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.book-row-primary img:hover {
+    transform: translatey(-10px) rotate(8deg);
+    transition: 0.1s;
+}
+
+.book-row-primary p {
+    margin: 10px;
+}
+
+/* 其他行书籍容器（原 .style2） */
+.book-row-secondary {
+    padding: 0vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-row-secondary div {
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin: 25px 20px 20px;
+}
+
+.book-row-secondary img {
+    background-color: rgb(241, 241, 241, 0.3);
+    width: 100%;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.book-row-secondary img:hover {
+    transform: translatey(-10px) rotate(8deg);
+}
+
+.book-row-secondary p {
+    margin: 10px;
+}
+
+/* 响应式：窄屏时改为垂直排列（原断点 786px 保持不变） */
+@media screen and (max-width: 786px) {
+    .book-row-primary,
+    .book-row-secondary {
+        flex-direction: column;
+    }
+    .book-row-primary {
+        padding-top: 100px;
+    }
+    .book-row-primary div {
+        justify-content: center;
+        margin: 20px;
+    }
+}
